@@ -9,7 +9,7 @@ Allows me to sign important announcements / updates I make with my private key, 
 
 ## How does it work?
 ### What I do
-I write my message in plaintext like this readme file you're reading right now. I then import the plaintext into my PGP program (in this case I’m using GnuPG) and encrypt it using my private key. The private key does not get shared with anyone else, only I have access to it. The encrypted version of the message is then sent alongside the plaintext version, so that you can compare them to verify authenticity.
+I write my message in plaintext like this readme file you're reading right now. I then encrypt it using my private key. The private key does not get shared with anyone else, only I have access to it. The encrypted version of the message is then sent alongside the plaintext version, so that you can compare them to verify authenticity.
 
 ### What you do
 You download the public key from this GitHub repo and import it into your PGP program of choice (I recommend GnuGP). You then decrypt the encrypted message using the public key. Once the message has been decrypted, you can compare the result of the decryption to the plaintext message to check if it was modified in transit. Since the only thing your public key can decrypt are messages encrypted with my private key, you can be certain that I am the one who originally wrote the message.
